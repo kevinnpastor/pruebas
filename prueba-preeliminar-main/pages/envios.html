@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+  <h2>Costos y tiempo de envio</h2>
+
+  <table border="13">
+    <caption>Costos de envios a nivel Nacional</caption>
+    <thead>
+      <tr>
+        <th>Destino</th>
+        <th>Tiempo estimado</th>
+        <th>Costo de envio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lima Metropolitana</td>
+        <td>4 a 12h</td>
+        <td>s/10.00</td>
+      </tr>
+      <tr>
+        <td>Ica y trujillo</td>
+        <td>1 dia</td>
+        <td>S/18.00</td>
+      </tr>
+      <tr>
+        <td>Cusco o Provincia</td>
+        <td>2 días </td>
+        <td>S/24.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"> Envíos gratuitos en Lima por la compra de 5 productos</td>
+      </tr>
+    </tfoot>
+</table>
+</section>
+
+<section>
+  <h2>Solicitud de pedidos</h2>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Datos de Contacto y Reserva</legend>
+
+      <p>
+        <label for="contacto-nombre">Nombre completo:</label>
+        <input type="text" id="contacto-nombre" name="nombre" required>
+      </p>
+
+      <p>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@empresa.com" required>
+      </p>
+
+      <p>
+        <label for="contacto-telefono">Teléfono o WhatsApp (9 dígitos):</label>
+        <input type="tel" id="contacto-telefono" name="telefono" pattern="[0-9]{9}" placeholder="98940564" required>
+      </p>
+
+      <p>
+        <label for="contacto-tipo">Tipo de cliente:</label>
+        <select id="contacto-tipo" name="tipo" required>
+          <option value="">-- Elige una opción --</option>
+          <option value="personal">Consumo Personal</option>
+          <option value="cafeteria">Reunion o fiesta</option>
+          <option value="corporativo">Oficina o empresa</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="contactomensaje">Mensaje o detalles:</label> <br>
+        <textarea id="contactomensaje" name="mensaje" rows="2" required></textarea>
+      </p>
+
+      <button type="submit">Enviar Solicitud de Pedidos</button>
+    </fieldset>
+  </form>
+</section>
+          
+</body>
+</html>

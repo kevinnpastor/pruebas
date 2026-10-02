@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tabla sobre compras</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Tiempo</th>
+                    <th>Transporte</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zapatilla</td>
+                    <td>1Hora</td>
+                    <td>Carro</td>
+                    <td>100$</td>
+                </tr>
+                <tr>
+                    <td>Camisa</td>
+                    <td>2Horas</td>
+                    <td>Avion</td>
+                    <td>200$</td>
+                </tr>
+                <tr>
+                    <td>Gorra</td>
+                    <td>3Horas</td>
+                    <td>Barco</td>
+                    <td>300$</td>
+                </tr>
+            </tbody>
+            <tfooter>
+                <tr>
+                    <td colspan="4">Envios gratis apartir de 2000 soles</td>
+                </tr>
+            </tfooter>
+        </table>
+    </header>
+    <main>
+        <h1>Formulario de solictud de pedido</h1>
+        <form action="1" method="post">
+            <fieldset>
+                <legend>Formulario de Solicitud de Pedido</legend>
+                <p>
+                    <label for="nombre">Nombre y apellidos Completos</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@empresa.com" required>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono o WhatsApp (9 dígitos)</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="989405564" required>
+                </p>
+                <button type="submit">Enviar Solicitud</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
